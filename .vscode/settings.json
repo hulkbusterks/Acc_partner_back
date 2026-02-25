@@ -1,0 +1,23 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        ".\\.venv\\Scripts\\python.exe": true,
+        "/^python -m pytest tests/ -x -v --tb=short 2>&1 \\| Out-String$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python -m pytest tests/ -v --tb=short 2>&1 \\| Out-String$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^\\$env:TESTING=\"1\"; python -m pytest tests/ -v --tb=short 2>&1 \\| Out-String$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "c:\\Users\\kritsharma\\Documents\\workspace\\Acc-Backend\\.venv\\Scripts\\python.exe": true
+    },
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
